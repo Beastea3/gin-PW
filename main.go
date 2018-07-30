@@ -15,6 +15,7 @@ func main() {
 	{
 		api.GET("/", controllers.Welcome)
 		api.GET("/joke", controllers.Api)
+		api.POST("/uploadFiles", controllers.UploadFiles)
 	}
 	api.GET("/jokes", controllers.JokeHandler)
 	api.POST("/jokes/like/:jokeID", controllers.LikeJoke)
